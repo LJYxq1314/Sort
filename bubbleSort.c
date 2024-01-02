@@ -23,6 +23,10 @@ int printArray(int *array, int arraySize)
 /* 冒泡排序 */
 void bubbleSort(int *array, int arraySize)
 {
+    if(array == NULL)
+    {
+        return;
+    }
     for(int end = arraySize; end > 0; end--)
     {
         for(int begin = 1; begin < end; begin++)
@@ -39,6 +43,10 @@ void bubbleSort(int *array, int arraySize)
 /* 冒泡排序---优化1 */
 void bubbleSort01(int *array, int arraySize)
 {
+    if(array == NULL)
+    {
+        return;
+    }
     int sorted = 1;
     for(int end = arraySize; end > 0; end--)
     {
@@ -64,7 +72,10 @@ void bubbleSort01(int *array, int arraySize)
 /* 冒泡排序---优化2 */
 void bubbleSort02(int *array, int arraySize)
 {
-
+    if(array == NULL)
+    {
+        return;
+    }
     int sortedIndex  = 0;
     for(int end = arraySize; end > 0; end--)
     {
